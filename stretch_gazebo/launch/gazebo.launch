@@ -10,6 +10,8 @@
   <arg name="gpu_lidar" default="false"/>
   <arg name="visualize_lidar" default="false"/>
   <arg name="world" default="worlds/empty.world"/>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>    
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(arg world)" />
@@ -25,7 +27,9 @@
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-        args=" -urdf -model robot -param robot_description -J joint_lift 0.2 -J joint_wrist_yaw 3.14" respawn="false" output="screen" />
+        args=" -urdf -model robot -param robot_description 
+        -J joint_lift 0.2 -J joint_wrist_yaw 3.14
+        -x $(arg x) -y $(arg y)" respawn="false" output="screen" />
 
   <node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="30.0" />
