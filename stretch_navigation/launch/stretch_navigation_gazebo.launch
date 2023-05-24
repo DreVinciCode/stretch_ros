@@ -39,4 +39,7 @@
   <!-- VISUALIZE -->
   <node name="rviz" pkg="rviz" type="rviz" output="log" args="-d $(find stretch_navigation)/rviz/custom.rviz" if="$(arg rviz)" />
 
+  <rosparam file="$(find stretch_navigation)/config/stretch_settings.yaml" command="load" />
+
+
 </launch>

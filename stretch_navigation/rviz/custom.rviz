@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /RobotModel1
         - /Captured Laser Scan1
         - /Odometry1/Shape1
       Splitter Ratio: 0.6117647290229797
@@ -52,7 +53,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.5
+    - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -474,25 +475,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.573927879333496
+      Distance: 4.74220609664917
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.35903388261795044
-        Y: 0.7160218954086304
-        Z: 0.5280526876449585
+        X: -1.2785634994506836
+        Y: 0.1165270209312439
+        Z: 0.06273843348026276
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8247963786125183
+      Pitch: 0.7947964072227478
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.0699405670166016
+      Yaw: 4.669943332672119
     Saved: ~
 Window Geometry:
   Displays:

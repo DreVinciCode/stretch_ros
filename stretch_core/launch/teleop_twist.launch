@@ -1,9 +1,9 @@
 <launch>
 
   <arg name="teleop_type"   default="keyboard"         doc="how to teleop ('keyboard', 'joystick', or 'none')" />
-  <arg name="linear"        default="0.04"             doc="linear speed (m/s)" />
-  <arg name="angular"       default="0.1"              doc="angular speed (rad/s)" />
-  <arg name="twist_topic"   default="/stretch/cmd_vel" doc="topic to command Twist messages" />
+  <arg name="linear"        default="1.0"             doc="linear speed (m/s)" />
+  <arg name="angular"       default="2.0"              doc="angular speed (rad/s)" />
+  <arg name="twist_topic"   default="/stretch_diff_drive_controller/cmd_vel" />
   <arg name="joystick_port" default="/dev/input/js0"   doc="joystick USB device name" />
 
   <!-- KEYBOARD TELEOP -->
